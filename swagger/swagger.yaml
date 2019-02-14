@@ -1,0 +1,132 @@
+consumes:
+- application/json
+- application/xml
+- application/gob
+- application/x-gob
+definitions:
+  Healthcheck:
+    description: Health check (default view)
+    example:
+      status: Officiis perspiciatis maiores minima ducimus et.
+    properties:
+      status:
+        description: Status
+        example: Officiis perspiciatis maiores minima ducimus et.
+        type: string
+    required:
+    - status
+    title: 'Mediatype identifier: application/vnd.healthcheck+json; view=default'
+    type: object
+  PaycheckPayload:
+    description: Paycheck payload
+    example:
+      ethereumAddress: Cum adipisci velit ullam.
+      tokenAmount: 8.478115314176678e+18
+    properties:
+      ethereumAddress:
+        description: ethereum address
+        example: Cum adipisci velit ullam.
+        type: string
+      tokenAmount:
+        description: token amount
+        example: 8.478115314176678e+18
+        format: int64
+        type: integer
+    required:
+    - ethereumAddress
+    - tokenAmount
+    title: PaycheckPayload
+    type: object
+  Standard_error:
+    description: A standard error response (default view)
+    example:
+      code: 400
+      message: Bad Request
+    properties:
+      code:
+        description: A code that describes the error
+        example: 400
+        format: int64
+        type: integer
+      message:
+        description: A message that describes the error
+        example: Bad Request
+        type: string
+    required:
+    - code
+    - message
+    title: 'Mediatype identifier: application/standard_error+json; view=default'
+    type: object
+host: localhost:8888
+info:
+  description: An accounts payable service for coindrop
+  title: Coindrop Accounts Payable Server
+  version: ""
+paths:
+  /v1/healthcheck:
+    get:
+      description: Returns OK if system is healthy
+      operationId: healthcheck#show
+      produces:
+      - application/vnd.healthcheck+json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Healthcheck'
+        "404":
+          description: Not Found
+      schemes:
+      - http
+      summary: show healthcheck
+      tags:
+      - healthcheck
+  /v1/paycheck:
+    post:
+      description: Sends ethereum wallet token amount
+      operationId: paycheck#send
+      parameters:
+      - description: Paycheck payload
+        in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/PaycheckPayload'
+      produces:
+      - application/standard_error+json
+      - text/plain
+      responses:
+        "200":
+          description: OK
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/Standard_error'
+        "404":
+          description: Not Found
+        "410":
+          description: Gone
+          schema:
+            $ref: '#/definitions/Standard_error'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/Standard_error'
+      schemes:
+      - http
+      summary: send paycheck
+      tags:
+      - paycheck
+produces:
+- application/json
+- application/xml
+- application/gob
+- application/x-gob
+responses:
+  NotFound:
+    description: Not Found
+  OK:
+    description: OK
+schemes:
+- http
+swagger: "2.0"
