@@ -1,0 +1,72 @@
+# github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da
+github.com/armon/go-metrics
+# github.com/btcsuite/btcd v0.0.0-20190213025234-306aecffea32
+github.com/btcsuite/btcd/btcec
+# github.com/dimfeld/httppath v0.0.0-20170720192232-ee938bf73598
+github.com/dimfeld/httppath
+# github.com/dimfeld/httptreemux v0.0.0-20181203084027-0ffa82afd135
+github.com/dimfeld/httptreemux
+# github.com/ethereum/go-ethereum v0.0.0-20180116162341-02aeb3d76652
+github.com/ethereum/go-ethereum
+github.com/ethereum/go-ethereum/common
+github.com/ethereum/go-ethereum/core/types
+github.com/ethereum/go-ethereum/crypto
+github.com/ethereum/go-ethereum/ethclient
+github.com/ethereum/go-ethereum/common/hexutil
+github.com/ethereum/go-ethereum/crypto/sha3
+github.com/ethereum/go-ethereum/params
+github.com/ethereum/go-ethereum/rlp
+github.com/ethereum/go-ethereum/trie
+github.com/ethereum/go-ethereum/common/math
+github.com/ethereum/go-ethereum/crypto/secp256k1
+github.com/ethereum/go-ethereum/rpc
+github.com/ethereum/go-ethereum/log
+# github.com/go-stack/stack v1.8.0
+github.com/go-stack/stack
+# github.com/goadesign/goa v0.0.0-20181123163739-e6e9ecbac971
+github.com/goadesign/goa
+github.com/goadesign/goa/goatest
+github.com/goadesign/goa/client
+github.com/goadesign/goa/middleware
+github.com/goadesign/goa/design
+github.com/goadesign/goa/design/apidsl
+github.com/goadesign/goa/uuid
+github.com/goadesign/goa/dslengine
+# github.com/hashicorp/go-immutable-radix v1.0.0
+github.com/hashicorp/go-immutable-radix
+# github.com/hashicorp/golang-lru v0.5.0
+github.com/hashicorp/golang-lru/simplelru
+# github.com/inconshreveable/mousetrap v1.0.0
+github.com/inconshreveable/mousetrap
+# github.com/konsorten/go-windows-terminal-sequences v1.0.1
+github.com/konsorten/go-windows-terminal-sequences
+# github.com/manveru/faker v0.0.0-20171103152722-9fbc68a78c4d
+github.com/manveru/faker
+# github.com/rcrowley/go-metrics v0.0.0-20181016184325-3113b8401b8a
+github.com/rcrowley/go-metrics
+# github.com/rs/cors v1.6.0
+github.com/rs/cors
+# github.com/satori/go.uuid v0.0.0-20181028125025-b2ce2384e17b
+github.com/satori/go.uuid
+# github.com/sirupsen/logrus v0.0.0-20190210130017-cdb2f3857cfb
+github.com/sirupsen/logrus
+# github.com/spf13/cobra v0.0.0-20181127133106-d2d81d9a96e2
+github.com/spf13/cobra
+# github.com/spf13/pflag v0.0.0-20181107220802-aea12ed67216
+github.com/spf13/pflag
+# github.com/zach-klippenstein/goregen v0.0.0-20160303162051-795b5e3961ea
+github.com/zach-klippenstein/goregen
+# golang.org/x/crypto v0.0.0-20190211182817-74369b46fc67
+golang.org/x/crypto/sha3
+golang.org/x/crypto/ssh/terminal
+# golang.org/x/net v0.0.0-20190119204137-ed066c81e75e
+golang.org/x/net/websocket
+# golang.org/x/sys v0.0.0-20190213121743-983097b1a8a3
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# gopkg.in/fatih/set.v0 v0.2.1
+gopkg.in/fatih/set.v0
+# gopkg.in/karalabe/cookiejar.v2 v2.0.0-20150724131613-8dcd6a7f4951
+gopkg.in/karalabe/cookiejar.v2/collections/prque
+# gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce
+gopkg.in/natefinch/npipe.v2

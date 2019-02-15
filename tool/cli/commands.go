@@ -14,16 +14,17 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/goadesign/goa"
-	goaclient "github.com/goadesign/goa/client"
-	uuid "github.com/goadesign/goa/uuid"
-	"github.com/spf13/cobra"
-	"github.com/waymobetta/go-coindrop-ap-server/client"
 	"log"
 	"os"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/goadesign/goa"
+	goaclient "github.com/goadesign/goa/client"
+	uuid "github.com/goadesign/goa/uuid"
+	"github.com/spf13/cobra"
+	"github.com/waymobetta/go-coindrop-ap-server/client"
 )
 
 type (

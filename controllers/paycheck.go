@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	log "github.com/Sirupsen/logrus"
 	"github.com/goadesign/goa"
+	log "github.com/sirupsen/logrus"
 	"github.com/waymobetta/go-coindrop-ap-server/app"
 	"github.com/waymobetta/go-coindrop-ap-server/client"
 	ethsvc "github.com/waymobetta/go-coindrop-ap-server/services/ethereum"
